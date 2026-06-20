@@ -5,7 +5,7 @@ app = Flask(__name__, static_url_path='/static')
 
 
 # Load the pickled machine learning model
-with open('model.pkl', 'rb') as model_file:
+with open('model/artifacts/model.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
 
 @app.route('/', methods=['GET', 'POST'])

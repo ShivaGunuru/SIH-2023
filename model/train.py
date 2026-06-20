@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import f1_score
 import tensorflow as tf
 
-data = pd.read_csv("data.csv")
+data = pd.read_csv("data/raw/data.csv")
 
 X = data.drop("Label", axis=1) 
 y = data["Label"]
